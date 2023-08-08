@@ -1,0 +1,248 @@
+@mixin police {
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    color: #ffffff;
+}
+
+$thick : 1px;
+$pad : 0.2em;
+$extra : calc(#{$pad} * 1.2);
+$color : #ff0000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    @include police;
+    background-image: url("/assets/background.jpg");
+    /* Chemin de votre image */
+    background-size: contain;
+    /* Redimensionne l'image pour qu'elle soit entièrement visible */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image */
+    background-attachment: fixed;
+    /* Fixe l'image en arrière-plan pendant le défilement */
+    background-color: #000000;
+    /* Couleur de fond noir */
+    background-position: center center;
+    /* Centre l'image horizontalement et verticalement */
+}
+
+
+
+header {
+    padding: 2%;
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .nav-main,
+        & .nav-second {
+            list-style: none;
+            display: flex;
+            gap: 10px; // Ajoutez un espacement entre les éléments
+
+            &.nav-main {
+                gap: 100px;
+
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    position: relative;
+                }
+
+                a:after {
+                    bottom: 0;
+                    content: "";
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: #ff0000;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                a:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+
+                &.nav-second {
+                    gap: 80px; // Espacement spécifique pour nav-second
+                }
+            }
+
+            &.nav-second {
+                gap: 80px; // Espacement spécifique pour nav-second
+            }
+
+            & a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+
+        .signup-button,
+        .signin-button {
+            a {
+                padding: $pad $extra;
+                display: inline-block;
+                border: $thick solid transparent;
+                position: relative;
+                cursor: pointer;
+                letter-spacing: 0.05em;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    bottom: -$thick;
+                    left: $extra;
+                    right: $extra;
+                    height: $thick;
+                    background: $color;
+                    // z-index: -1;
+                    transition:
+                        transform 0.8s cubic-bezier(1, 0, .37, 1) 0.2s,
+                        right 0.2s cubic-bezier(.04, .48, 0, 1) 0.6s,
+                        left 0.4s cubic-bezier(.04, .48, 0, 1) 0.6s;
+                    transform-origin: left;
+                }
+
+            }
+
+            .line {
+                position: absolute;
+                background: $color;
+
+                &.-right,
+                &.-left {
+                    width: $thick;
+                    bottom: -$thick;
+                    top: -$thick;
+                    transform: scale3d(1, 0, 1);
+                }
+
+                &.-top,
+                &.-bottom {
+                    height: $thick;
+                    left: -$thick;
+                    right: -$thick;
+                    transform: scale3d(0, 1, 1);
+                }
+
+                &.-right {
+                    right: -$thick;
+                    transition: transform 0.1s cubic-bezier(1, 0, .65, 1.01) 0.23s;
+                    transform-origin: top;
+                }
+
+                &.-top {
+                    top: -$thick;
+                    transition: transform 0.08s linear 0.43s;
+                    transform-origin: left;
+                }
+
+                &.-left {
+                    left: -$thick;
+                    transition: transform 0.08s linear 0.51s;
+                    transform-origin: bottom;
+                }
+
+                &.-bottom {
+                    bottom: -$thick;
+                    transition: transform 0.3s cubic-bezier(1, 0, .65, 1.01);
+                    transform-origin: right;
+                }
+            }
+
+            a:hover,
+            a:active {
+
+                .text {
+                    transform: translate3d(0, 0, 0);
+                    transition: transform 0.6s cubic-bezier(.2, 0, 0, 1) 0.4s;
+                }
+
+                &:after {
+                    transform: scale3d(0, 1, 1);
+                    right: -$thick;
+                    left: -$thick;
+                    transform-origin: right;
+                    transition:
+                        transform 0.2s cubic-bezier(1, 0, .65, 1.01) 0.17s,
+                        right 0.2s cubic-bezier(1, 0, .65, 1.01),
+                        left 0s 0.3s;
+                }
+
+                .line {
+                    transform: scale3d(1, 1, 1);
+
+                    &.-right {
+                        transition: transform 0.1s cubic-bezier(1, 0, .65, 1.01) 0.2s;
+                        transform-origin: bottom;
+                    }
+
+                    &.-top {
+                        transition: transform 0.08s linear 0.4s;
+                        transform-origin: right;
+                    }
+
+                    &.-left {
+                        transition: transform 0.08s linear 0.48s;
+                        transform-origin: top;
+                    }
+
+                    &.-bottom {
+                        transition: transform 0.5s cubic-bezier(0, .53, .29, 1) 0.56s;
+                        transform-origin: left;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    & .title-main {
+        margin-bottom: 30px;
+        text-align: center;
+
+        font-size: 60px;
+        font-weight: bold;
+        // Dégradé de couleur avec préfixes de fournisseur
+        background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.50), #D65189, #E85A7499, #FFB1DBE0);
+        background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0.50), #D65189, #E85A7499, #FFB1DBE0);
+        background: -o-linear-gradient(to right, rgba(255, 255, 255, 0.50), #D65189, #E85A7499, #FFB1DBE0);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.50), #D65189, #E85A7499, #FFB1DBE0);
+
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    & .search-bar {
+        margin-top: 20px;
+        /* Ajoutez une marge en haut */
+        text-align: center;
+
+        & form {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

@@ -1,146 +1,58 @@
 <!DOCTYPE html>
-<html lang="english">
-  <head>
-    <title>Design TSKA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="public/external/logo.png">
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+<html lang="en">
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <title>TSKA</title>
+</head>
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="scripts.js"></script>
-  </head>
-  <body>
-    <div>
-      <link href="./index.css" rel="stylesheet" />
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="/assets/logo.png" alt="logo" class="logo">
+            <ul class="nav-main">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Template</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="nav-second">
+                <section class="signup-button">
+                    <a>
+                        <span>Sign up</span>
+                        <span class="line -right"></span>
+                        <span class="line -top"></span>
+                        <span class="line -left"></span>
+                        <span class="line -bottom"></span>
+                    </a>
+                </section>
+                <section class="signin-button">
+                    <a>
+                        <span>Sign in</span>
+                        <span class="line -right"></span>
+                        <span class="line -top"></span>
+                        <span class="line -left"></span>
+                        <span class="line -bottom"></span>
+                    </a>
+                </section>
+            </ul>
+        </nav>
 
-      <div class="jjk-container">
-        <div class="jjk-jjk">
-          <img
-            alt="wp892781914280"
-            src="public/external/background.jpg"
-            class="jjk-background"
-          />
-          <section class="jjk-section">
-            <div class="jjk-container1 HeadingH1">
-              <div class="HeadingH1 textarea"></div>
-            </div>
-            <div class="jjk-searchbardark">
-              <div class="jjk-statelayer">
-                <div class="jjk-leadingicon">
-                  <div class="jjk-container2">
-                    <div class="jjk-statelayer1">
-                      <img
-                        alt="IconI428"
-                        src="public/external/iconi428-7ai.svg"
-                        class="jjk-icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <input
-                  type="text"
-                  placeholder="Entrez des mots-clés"
-                  class="jjk-contentinput"
-                />
-                <div class="jjk-trailing-elements">
-                  <div class="jjk-frame1sttrailingicon">
-                    <div class="jjk-container3">
-                      <div class="jjk-statelayer2">
-                        <img
-                          alt="IconI428"
-                          src="public/external/iconi428-gc59.svg"
-                          class="jjk-icon1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <header class="jjk-header">
-            <img
-              alt="stablediffusionxl3clipdropbackgroundremoval25190"
-              src="public/external/logo.png"
-              class="jjk-logo"
-            />
-            <nav class="jjk-topmenu">
-              <span class="jjk-textaccueil"><span>Accueil</span></span>
-              <img
-                alt="Navigation14280"
-                src="public/external/navigation14280-egxo-200h.png"
-                class="jjk-navigation1"
-              />
-              <span class="jjk-texttemplate"><span>Template</span></span>
-              <img
-                alt="Navigation24280"
-                src="public/external/navigation24280-vbyr-200h.png"
-                class="jjk-navigation2"
-              />
-              <span class="jjk-textnews"><span>News</span></span>
-              <img
-                alt="Navigation34280"
-                src="public/external/navigation34280-2kqg-200h.png"
-                class="jjk-navigation3"
-              />
-              <span class="jjk-textcontact"><span>Contact</span></span>
-              <img
-                alt="Navigation44280"
-                src="public/external/navigation44280-jsc-200h.png"
-                class="jjk-navigation4"
-              />
-            </nav>
-            <nav class="jjk-signinbutton">
-              <img
-                alt="Rectangle24280"
-                src="public/external/rectangle24280-78n.svg"
-                class="jjk-rectangle2"
-              />
-              <span class="jjk-text4"><span>Sign in</span></span>
-            </nav>
-            <nav class="jjk-signupbutton">
-              <img
-                alt="Rectangle34280"
-                src="public/external/rectangle34280-afl.svg"
-                class="jjk-rectangle3"
-              />
-              <span class="jjk-text6"><span>Sign up</span></span>
-            </nav>
-          </header>
+    </header>
+    <section class="content-section">
+        <div class="title-main">
+            <h1>Search Any Template</h1>
         </div>
-      </div>
-    </div>
-    
-  </body>
+        <div class="search-bar">
+            <form action="" method="post">
+                <input type="text" name="" id="" placeholder="Search">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </section>
+</body>
+
 </html>

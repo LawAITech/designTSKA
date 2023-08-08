@@ -1,38 +1,48 @@
-Projet "DesignTSKA"
+# TSKA Design
 
-Créé sans aucune dépendance et utilise uniquement du HTML et du CSS pour sa mise en page et son style.
-Instructions
+![TSKA Logo](/favicon.png)
 
-    Clonez le projet sur votre ordinateur en utilisant la commande suivante :
+Welcome to the TSKA Design repository! This repository contains the design assets and code for the TSKA website.
 
-bash
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-git clone https://github.com/votre-utilisateur/designTSKA.git
+## About
+The TSKA Design project aims to create an aesthetically pleasing and user-friendly website design for the TSKA organization. The design utilizes modern web design principles and techniques to provide an engaging user experience.
 
-    Ouvrez le fichier index.html dans votre navigateur pour visualiser la page web.
+## Features
+- Responsive design for various screen sizes and devices.
+- Elegant color scheme and typography choices.
+- Navigation menu with smooth animations.
+- Eye-catching buttons and interactive elements.
+- Unique and appealing visuals.
 
-Structure du Projet
+## Installation
+To use the TSKA Design assets and code, follow these steps:
 
-Le projet est structuré de la manière suivante :
-
-    index.html : Le fichier HTML principal qui contient le contenu de la page.
-    style.css : Le fichier CSS qui gère le style et la mise en page de la page web.
-    public/external/ : Le dossier contenant les images utilisées pour remplacer les bordures en CSS.
-    public/external/background.jpg : L'image de fond de la page.
-    public/external/iconi428-7ai.svg : L'icône utilisée dans la barre de recherche.
-    public/external/... : Autres images utilisées dans la page (le cas échéant).
-
-Remarques
-
-    Ce projet a été créé sans utiliser de dépendances externes, ce qui signifie qu'aucune installation n'est requise pour le faire fonctionner.
-
-    Le HTML et le CSS ont été structurés de manière à rendre le projet maintenable et facile à modifier. Vous pouvez ajouter, supprimer ou modifier le contenu de la page en éditant simplement le fichier index.html.
-
-    Bien qu'il y ait une image de fond dans la page, il n'y a pas d'animation prévue pour le moment. Vous pouvez ajouter des animations personnalisées en utilisant du CSS ou en intégrant des bibliothèques d'animation si nécessaire.
-
-    Pour remplacer les bordures en CSS, des images ont été utilisées dans certains éléments. Vous pouvez modifier ces images ou les styles CSS associés pour personnaliser l'apparence des bordures.
-
-N'hésitez pas à explorer et à modifier le projet selon vos besoins et votre créativité ! Si vous avez des questions ou des suggestions d'amélioration, n'hésitez pas à les partager.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/LawAITech/designTSKA.git
+Navigate to the project folder:
 
 
-Date : 06/08/23
+    cd designTSKA
+
+    Open the index.html file in your preferred web browser.
+
+Usage
+
+Feel free to use the TSKA Design assets and code as a starting point for your own projects. Customize the design, colors, and content according to your needs.
+Contributing
+
+Contributions are welcome! If you have ideas for improvements or bug fixes, please open an issue or submit a pull request. See our Contribution Guidelines for more information on how to get involved.
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+

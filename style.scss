@@ -18,7 +18,7 @@ $color : #ff0000;
 body {
 
     @include police;
-    background-image: url("assets/background.jpg");
+    background-image: url('https://github.com/LawAITech/designTSKA/raw/main/assets/background.jpg');
     /* Chemin de votre image */
     background-size: contain;
     /* Redimensionne l'image pour qu'elle soit entièrement visible */
